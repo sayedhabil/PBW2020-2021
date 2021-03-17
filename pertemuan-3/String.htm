@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Manipulasi String</title>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//fonts.gstatic.com" />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open Sans:400,500,600,700&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans:400,500,600,700&display=swap" media="print" onload="this.media='all'">
+</head>
+	<body >
+
+		<p id="contoh"></p>
+		<div id="contoh2"></div>
+		<div id="contoh3"></div>
+		<p id="contoh4"></p>
+		<p id="contoh5"></p>
+		<p id="contoh6"></p>
+		<p id="contoh7"></p>
+		<p id="contoh8"></p>
+		<p id="besar"></p>
+		<p id="kecil"></p>
+
+		<script>
+			//manipulasi string dengan length
+		var kalimat = "Saya Terbang Jauh";
+		document.getElementById("contoh").innerHTML = kalimat.length;
+
+		//manipulasi string dengan indexOf
+		var kalimat1 = "Selamat datang di tutorial string javascript";
+	    var temukan = kalimat1.indexOf("tutorial");
+	    document.getElementById("contoh2").innerHTML = temukan;
+
+	    //manipulasi string dengan LastindexOf
+	    var kalimat2 = "Selamat datang di tutorial string javascript";
+	    var temukan1 = kalimat2.LastindexOf("tutorial");
+	    document.getElementById("contoh3").innerHTML = temukan1;
+
+	    //manipulasi string dengan search
+	    var kalimat3 = "belajar javascript di www.malasngoding.com";
+	    var cari = kalimat3.search("javascript");
+	    document.getElementById("contoh4").innerHTML = cari;
+
+	    //manipulasi string dengan slice
+	    var kalimat4 = "belajar javascript di www.malasngoding.com";   
+	    var filter = kalimat4.slice(22, 42);
+	    document.getElementById("contoh5").innerHTML = filter;
+
+	    //manipulasi string dengan replace
+	    var kalimat5 = "belajar javascript di www.malasngoding.com";   
+			var ganti = kalimat5.replace('javascript', 'pemrograman');
+	    document.getElementById("contoh6").innerHTML = ganti;
+
+	    //manipulasi string dengan toUpperCase dan toLowerCase
+	    var kalimat6 = "Belajar JAVASCRIPT di www.malasngoding.com";   
+			
+	  	// mengubah ke huruf besar
+	  	var a = kalimat6.toUpperCase();
+	  
+	   	// mengubah ke huruf kecil
+	  	var b = kalimat6.toLowerCase();
+	  
+	    document.getElementById("besar").innerHTML = a;
+	  	document.getElementById("kecil").innerHTML = b;
+
+	  	//manipulasi string dengan concat
+	  	var a2 = "Muammar";    
+	  	var b2 = "Yasir";   
+			  
+	   	// menggabungkan string
+	  	var gabung = a2.concat(" ",b2);  
+	    document.getElementById("contoh7").innerHTML = gabung;
+
+	    //manipulasi string dengan split
+	    var huruf = "a,b,c";    
+	  
+	   	// string jadi array
+	    var convert = huruf.split(",");  
+	    document.getElementById("contoh8").innerHTML = convert[0];
+
+		</script>
+	</body>
+</html>
